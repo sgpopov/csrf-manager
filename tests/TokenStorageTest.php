@@ -13,6 +13,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
 
     /**
      * Re-generate session before each test.
+     *
+     * @runInSeparateProcess
      */
     protected function setUp()
     {
@@ -22,6 +24,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
+     *
+     * @runInSeparateProcess
      *
      * @covers TokenStorage
      */
@@ -34,6 +38,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      *
+     * @runInSeparateProcess
+     *
      * @covers TokenStorage::get()
      */
     public function shouldReturnNullAsToken()
@@ -45,6 +51,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
+     *
+     * @runInSeparateProcess
      *
      * @covers TokenStorage::set();
      */
@@ -63,6 +71,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
+     *
+     * @runInSeparateProcess
      *
      * @covers TokenStorage::exists()
      */
@@ -89,6 +99,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
     /**
      * @test
      *
+     * @runInSeparateProcess
+     *
      * @covers TokenStorage::isStarted()
      */
     public function shouldReturnThatSessionHasBeenStarted()
@@ -98,6 +110,8 @@ class TokenStorageTest extends PHPUnit_Framework_TestCase
 
     /**
      * @test
+     *
+     * @runInSeparateProcess
      *
      * @covers TokenStorage::isStarted()
      */
